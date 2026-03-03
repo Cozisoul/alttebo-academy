@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* === Brand Design Tokens === */
+@theme {
+  --color-alttebo-blue: #0F4C81;
+  --color-alttebo-dark: #0a365c;
+  --color-safety-yellow: #FFD700;
+  --color-safety-dark: #E6C200;
+  --color-workshop-grey: #F4F4F5;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Barlow", system-ui, sans-serif;
+}

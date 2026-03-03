@@ -1,17 +1,186 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Home">
+	<Header />
+
+	<!-- HERO SECTION -->
+	<section class="relative bg-slate-900 text-white py-32 overflow-hidden">
+		<div class="max-w-7xl mx-auto px-6 relative z-10 text-center md:text-left">
+			<span class="text-safety-yellow font-bold tracking-widest uppercase text-xs mb-4 block">Accredited Vocational Training</span>
+			<h1 class="text-5xl md:text-7xl font-display font-extrabold leading-none mb-6">
+				Build a Career <br />
+				<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-white">With Your Hands.</span>
+			</h1>
+			<p class="text-xl text-slate-300 max-w-2xl mb-10 leading-relaxed">
+				Join Alttebo Academy in Lebowakgomo. We offer QTCO NQF Level 4 accredited training in Panel Beating and Spray Painting inside a fully operational workshop.
+			</p>
+			<div class="flex flex-col md:flex-row gap-4">
+				<a href="/apply" class="bg-safety-yellow text-slate-900 px-8 py-4 rounded-md font-bold text-lg hover:bg-safety-dark transition-colors text-center">
+					Apply for 2025
+				</a>
+				<a href="#courses" class="border border-white/30 px-8 py-4 rounded-md font-bold text-lg hover:bg-white/10 transition-colors text-center">
+					View Courses
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- TRUST SIGNALS -->
+	<div class="bg-white border-b border-gray-200 py-8">
+		<div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale">
+			<span class="font-display font-bold text-xl">QTCO Accredited</span>
+			<span class="font-display font-bold text-xl">RMI Accredited</span>
+			<span class="font-display font-bold text-xl">CRA Member</span>
+			<span class="font-display font-bold text-xl">Mazda Approved</span>
+		</div>
+	</div>
+
+	<!-- COURSES SECTION -->
+	<section id="courses" class="py-24">
+		<div class="max-w-7xl mx-auto px-6">
+			<h2 class="text-4xl font-display font-bold text-slate-900 mb-12 text-center">Our Training Programmes</h2>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+				<!-- CARD 1: Panel Beating -->
+				<div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
+					<div class="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+						<span class="material-icons text-alttebo-blue text-2xl">construction</span>
+					</div>
+					<h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-alttebo-blue transition-colors">Automotive Body Repair</h3>
+					<p class="text-slate-600 mb-6 leading-relaxed">
+						Master the art of metal finishing, dent pulling, and chassis straightening. Learn on industrial equipment like the 10-Ton Potter Power Set.
+					</p>
+					<ul class="space-y-2 mb-8 text-sm text-slate-500 font-medium">
+						<li class="flex items-center gap-2"><span class="material-icons text-alttebo-blue text-base">check</span> NQF Level 4</li>
+						<li class="flex items-center gap-2"><span class="material-icons text-alttebo-blue text-base">check</span> 3-Year Programme</li>
+						<li class="flex items-center gap-2"><span class="material-icons text-alttebo-blue text-base">check</span> Grade 9 Required</li>
+					</ul>
+					<a href="/courses/panel-beating" class="block w-full text-center py-3 border border-slate-200 rounded-lg font-bold text-slate-700 hover:border-alttebo-blue hover:text-alttebo-blue transition-colors">View Curriculum</a>
+				</div>
+
+				<!-- CARD 2: Spray Painting -->
+				<div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
+					<div class="h-12 w-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
+						<span class="material-icons text-amber-600 text-2xl">palette</span>
+					</div>
+					<h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-alttebo-blue transition-colors">Automotive Spray Painting</h3>
+					<p class="text-slate-600 mb-6 leading-relaxed">
+						Learn colour matching, mixing, and application in a professional spray booth. From primer to clear coat, master the perfect finish.
+					</p>
+					<ul class="space-y-2 mb-8 text-sm text-slate-500 font-medium">
+						<li class="flex items-center gap-2"><span class="material-icons text-alttebo-blue text-base">check</span> NQF Level 4</li>
+						<li class="flex items-center gap-2"><span class="material-icons text-alttebo-blue text-base">check</span> 3-Year Programme</li>
+						<li class="flex items-center gap-2"><span class="material-icons text-alttebo-blue text-base">check</span> Grade 9 Required</li>
+					</ul>
+					<a href="/courses/spray-painting" class="block w-full text-center py-3 border border-slate-200 rounded-lg font-bold text-slate-700 hover:border-alttebo-blue hover:text-alttebo-blue transition-colors">View Curriculum</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- GALLERY SECTION -->
+	<section class="py-24 bg-white">
+		<div class="max-w-7xl mx-auto px-6">
+			<h2 class="text-4xl font-display font-bold text-slate-900 mb-4 text-center">Inside Our Workshop</h2>
+			<p class="text-slate-500 text-center mb-12 max-w-xl mx-auto">See our students and instructors in action. Real training, real equipment, real results.</p>
+
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+				<div class="rounded-xl overflow-hidden shadow-sm border border-gray-100 bg-black">
+					<video
+						class="w-full aspect-video object-cover gallery-video"
+						controls
+						controlslist="nodownload noremoteplayback"
+						muted
+						preload="metadata"
+						oncontextmenu="return false"
+					>
+						<source src="/videos/workshop-1.mp4" type="video/mp4" />
+					</video>
+				</div>
+
+				<div class="rounded-xl overflow-hidden shadow-sm border border-gray-100 bg-black">
+					<video
+						class="w-full aspect-video object-cover gallery-video"
+						controls
+						controlslist="nodownload noremoteplayback"
+						muted
+						preload="metadata"
+						oncontextmenu="return false"
+					>
+						<source src="/videos/workshop-2.mp4" type="video/mp4" />
+					</video>
+				</div>
+
+				<div class="rounded-xl overflow-hidden shadow-sm border border-gray-100 bg-black">
+					<video
+						class="w-full aspect-video object-cover gallery-video"
+						controls
+						controlslist="nodownload noremoteplayback"
+						muted
+						preload="metadata"
+						oncontextmenu="return false"
+					>
+						<source src="/videos/workshop-3.mp4" type="video/mp4" />
+					</video>
+				</div>
+
+				<div class="rounded-xl overflow-hidden shadow-sm border border-gray-100 bg-black">
+					<video
+						class="w-full aspect-video object-cover gallery-video"
+						controls
+						controlslist="nodownload noremoteplayback"
+						muted
+						preload="metadata"
+						oncontextmenu="return false"
+					>
+						<source src="/videos/workshop-4.mp4" type="video/mp4" />
+					</video>
+				</div>
+
+				<div class="rounded-xl overflow-hidden shadow-sm border border-gray-100 bg-black">
+					<video
+						class="w-full aspect-video object-cover gallery-video"
+						controls
+						controlslist="nodownload noremoteplayback"
+						muted
+						preload="metadata"
+						oncontextmenu="return false"
+					>
+						<source src="/videos/workshop-5.mp4" type="video/mp4" />
+					</video>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<Footer />
+</Layout>
+
+<style is:global>
+	/* Hide volume controls across browsers */
+	.gallery-video::-webkit-media-controls-volume-slider,
+	.gallery-video::-webkit-media-controls-mute-button {
+		display: none !important;
+	}
+</style>
+
+<script>
+	// Force all gallery videos to stay permanently muted
+	document.querySelectorAll('.gallery-video').forEach((video) => {
+		const v = video as HTMLVideoElement;
+		v.muted = true;
+		v.volume = 0;
+		v.addEventListener('volumechange', () => {
+			if (!v.muted || v.volume !== 0) {
+				v.muted = true;
+				v.volume = 0;
+			}
+		});
+	});
+</script>

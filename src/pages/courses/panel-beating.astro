@@ -1,0 +1,94 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Automotive Body Repair (Panel Beating)" description="QTCO NQF Level 4 Panel Beating training — a 3-year programme. Learn damage assessment, chassis straightening, dent pulling, and panel replacement at Alttebo Academy.">
+	<Header />
+
+	<!-- HERO -->
+	<section class="bg-slate-900 text-white py-24">
+		<div class="max-w-4xl mx-auto px-6">
+			<span class="text-safety-yellow font-bold tracking-widest uppercase text-xs mb-4 block">Course Programme</span>
+			<h1 class="text-5xl md:text-6xl font-display font-extrabold leading-tight mb-6">Master the Art<br/>of Metal.</h1>
+			<p class="text-xl text-slate-300 leading-relaxed max-w-2xl">
+				This Competency Based Modular Training (CBMT) course takes you from basics to professional body repair. You won't just learn theory — you will work on real vehicles using industrial equipment.
+			</p>
+		</div>
+	</section>
+
+	<!-- CONTENT -->
+	<section class="py-24">
+		<div class="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+
+			<!-- Main Content -->
+			<div class="md:col-span-2 space-y-12">
+				<div>
+					<h2 class="text-2xl font-display font-bold text-slate-900 mb-6">What You Will Learn</h2>
+					<ul class="space-y-4">
+						<li class="flex items-start gap-3">
+							<span class="material-icons text-alttebo-blue mt-0.5">check_circle</span>
+							<span class="text-slate-700">Damage assessment and quotation</span>
+						</li>
+						<li class="flex items-start gap-3">
+							<span class="material-icons text-alttebo-blue mt-0.5">check_circle</span>
+							<span class="text-slate-700">Operating 10-Ton Potter Power Sets for chassis straightening</span>
+						</li>
+						<li class="flex items-start gap-3">
+							<span class="material-icons text-alttebo-blue mt-0.5">check_circle</span>
+							<span class="text-slate-700">Using Electric Dent Pullers & Shrinkers</span>
+						</li>
+						<li class="flex items-start gap-3">
+							<span class="material-icons text-alttebo-blue mt-0.5">check_circle</span>
+							<span class="text-slate-700">Panel replacement and non-structural metal finishing</span>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<h2 class="text-2xl font-display font-bold text-slate-900 mb-6">Equipment You'll Train On</h2>
+					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+						<div class="bg-white p-4 rounded-lg border border-gray-100 text-sm font-medium text-slate-700 flex items-center gap-2"><span class="material-icons text-alttebo-blue text-lg">build</span> 10-Ton Potter Power Set</div>
+						<div class="bg-white p-4 rounded-lg border border-gray-100 text-sm font-medium text-slate-700 flex items-center gap-2"><span class="material-icons text-alttebo-blue text-lg">bolt</span> Anti-Zap System</div>
+						<div class="bg-white p-4 rounded-lg border border-gray-100 text-sm font-medium text-slate-700 flex items-center gap-2"><span class="material-icons text-alttebo-blue text-lg">settings</span> Electric Dent Pullers & Shrinkers</div>
+						<div class="bg-white p-4 rounded-lg border border-gray-100 text-sm font-medium text-slate-700 flex items-center gap-2"><span class="material-icons text-alttebo-blue text-lg">precision_manufacturing</span> Two-Post Hoist</div>
+						<div class="bg-white p-4 rounded-lg border border-gray-100 text-sm font-medium text-slate-700 flex items-center gap-2"><span class="material-icons text-alttebo-blue text-lg">engineering</span> Bench Grinders</div>
+						<div class="bg-white p-4 rounded-lg border border-gray-100 text-sm font-medium text-slate-700 flex items-center gap-2"><span class="material-icons text-alttebo-blue text-lg">handyman</span> Industrial Hand Tools</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div class="space-y-6">
+				<div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+					<h3 class="font-display font-bold text-lg text-slate-900 mb-4">Course Details</h3>
+					<dl class="space-y-4 text-sm">
+						<div>
+							<dt class="text-slate-500 font-medium">Certification</dt>
+							<dd class="text-slate-900 font-bold">QTCO NQF Level 4</dd>
+						</div>
+						<div>
+							<dt class="text-slate-500 font-medium">Duration</dt>
+							<dd class="text-slate-900 font-bold">3 Years</dd>
+						</div>
+						<div>
+							<dt class="text-slate-500 font-medium">Entry Requirement</dt>
+							<dd class="text-slate-900 font-bold">Grade 9 or higher</dd>
+						</div>
+						<div>
+							<dt class="text-slate-500 font-medium">Training Type</dt>
+							<dd class="text-slate-900 font-bold">CBMT (Hands-on)</dd>
+						</div>
+					</dl>
+				</div>
+				<a href="/apply" class="block w-full text-center bg-safety-yellow text-slate-900 px-6 py-4 rounded-lg font-bold hover:bg-safety-dark transition-colors uppercase tracking-wide">
+					Apply Now
+				</a>
+			</div>
+
+		</div>
+	</section>
+
+	<Footer />
+</Layout>

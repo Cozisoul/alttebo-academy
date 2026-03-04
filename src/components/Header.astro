@@ -10,7 +10,7 @@
             </div>
         </a>
 
-        <!-- Navigation -->
+        <!-- Desktop Navigation -->
         <nav class="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
             <a href="/" class="hover:text-alttebo-blue transition-colors">Home</a>
             <a href="/courses/panel-beating" class="hover:text-alttebo-blue transition-colors">Panel Beating</a>
@@ -19,9 +19,63 @@
             <a href="/apply" class="hover:text-alttebo-blue transition-colors">Apply</a>
         </nav>
 
-        <!-- CTA Button -->
-        <a href="/apply" class="bg-alttebo-blue text-white px-6 py-2.5 rounded-md font-bold text-sm uppercase tracking-wide hover:bg-alttebo-dark transition-colors">
-            Register Now
-        </a>
+        <div class="flex items-center gap-4">
+            <!-- CTA Button (hidden on very small screens) -->
+            <a href="/apply" class="hidden sm:inline-block bg-alttebo-blue text-white px-6 py-2.5 rounded-md font-bold text-sm uppercase tracking-wide hover:bg-alttebo-dark transition-colors">
+                Register Now
+            </a>
+
+            <!-- Mobile Hamburger Button -->
+            <button
+                id="mobile-menu-btn"
+                class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-lg hover:bg-gray-100 transition-colors"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+            >
+                <span id="hamburger-top" class="block w-6 h-0.5 bg-slate-700 transition-all duration-300"></span>
+                <span id="hamburger-mid" class="block w-6 h-0.5 bg-slate-700 mt-1.5 transition-all duration-300"></span>
+                <span id="hamburger-bot" class="block w-6 h-0.5 bg-slate-700 mt-1.5 transition-all duration-300"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200 bg-white">
+        <nav class="flex flex-col px-6 py-4 space-y-1">
+            <a href="/" class="py-3 px-3 rounded-lg text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-alttebo-blue transition-colors">Home</a>
+            <a href="/courses/panel-beating" class="py-3 px-3 rounded-lg text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-alttebo-blue transition-colors">Panel Beating</a>
+            <a href="/courses/spray-painting" class="py-3 px-3 rounded-lg text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-alttebo-blue transition-colors">Spray Painting</a>
+            <a href="/trade-testing" class="py-3 px-3 rounded-lg text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-alttebo-blue transition-colors">Trade Testing</a>
+            <a href="/apply" class="py-3 px-3 rounded-lg text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-alttebo-blue transition-colors">Apply</a>
+            <a href="/apply" class="mt-2 block text-center bg-alttebo-blue text-white py-3 rounded-lg font-bold text-sm uppercase tracking-wide hover:bg-alttebo-dark transition-colors">
+                Register Now
+            </a>
+        </nav>
     </div>
 </header>
+
+<script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const top = document.getElementById('hamburger-top');
+    const mid = document.getElementById('hamburger-mid');
+    const bot = document.getElementById('hamburger-bot');
+
+    btn?.addEventListener('click', () => {
+        const isOpen = !menu?.classList.contains('hidden');
+
+        menu?.classList.toggle('hidden');
+        btn.setAttribute('aria-expanded', String(!isOpen));
+
+        // Animate hamburger to X
+        if (!isOpen) {
+            top!.style.transform = 'translateY(8px) rotate(45deg)';
+            mid!.style.opacity = '0';
+            bot!.style.transform = 'translateY(-8px) rotate(-45deg)';
+        } else {
+            top!.style.transform = '';
+            mid!.style.opacity = '1';
+            bot!.style.transform = '';
+        }
+    });
+</script>

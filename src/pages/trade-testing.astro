@@ -1,0 +1,155 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Trade Testing" description="Accredited Trade Test Centre for Panel Beating and Spray Painting at Alttebo Academy, Lebowakgomo. merSETA & QTCO accredited.">
+	<Header />
+
+	<!-- HERO -->
+	<section class="bg-slate-900 text-white py-24">
+		<div class="max-w-4xl mx-auto px-6 text-center">
+			<span class="text-safety-yellow font-bold tracking-widest uppercase text-xs mb-4 block">merSETA & QTCO Accredited</span>
+			<h1 class="text-5xl md:text-6xl font-display font-extrabold leading-tight mb-6">Trade Test<br/>Centre.</h1>
+			<p class="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+				Alttebo Training Academy is an accredited Trade Test Centre. We offer trade tests in Panel Beating and Spray Painting, conducted in a fully operational workshop facility.
+			</p>
+			<a href="/alttebo-trade-test-info.pdf" download class="inline-flex items-center gap-2 mt-10 bg-safety-yellow text-slate-900 px-8 py-4 rounded-md font-bold text-lg hover:bg-safety-dark transition-colors">
+				<span class="material-icons">download</span> Download Trade Test Info
+			</a>
+		</div>
+	</section>
+
+	<!-- TWO ROUTES -->
+	<section class="py-24">
+		<div class="max-w-5xl mx-auto px-6">
+			<h2 class="text-3xl font-display font-bold text-slate-900 mb-4 text-center">Two Routes to a Trade Test</h2>
+			<p class="text-slate-500 text-center mb-16 max-w-xl mx-auto">There are two pathways to access a trade test at Alttebo Academy, depending on your background.</p>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+				<!-- Route 1 -->
+				<div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+					<div class="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+						<span class="material-icons text-alttebo-blue text-2xl">school</span>
+					</div>
+					<h3 class="text-xl font-bold text-slate-900 mb-3">Contract Apprenticeship</h3>
+					<p class="text-slate-600 text-sm mb-6 leading-relaxed">
+						For candidates on a formal artisan learning program with a contracted apprenticeship through a SETA/Company, plus a completed logbook.
+					</p>
+					<h4 class="text-sm font-bold text-slate-700 mb-3">You must have one of the following:</h4>
+					<ul class="space-y-2 text-sm text-slate-600">
+						<li class="flex items-start gap-2"><span class="material-icons text-alttebo-blue text-base mt-0.5">check_circle</span> N2 Certificate with relevant trade theory subjects</li>
+						<li class="flex items-start gap-2"><span class="material-icons text-alttebo-blue text-base mt-0.5">check_circle</span> SETA quality-assured technical trade theory at NQF Level 3</li>
+						<li class="flex items-start gap-2"><span class="material-icons text-alttebo-blue text-base mt-0.5">check_circle</span> Relevant Engineering NCV at NQF Level 3</li>
+						<li class="flex items-start gap-2"><span class="material-icons text-alttebo-blue text-base mt-0.5">check_circle</span> Relevant Engineering NCV 4 with all trade-related subjects</li>
+					</ul>
+				</div>
+
+				<!-- Route 2 -->
+				<div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+					<div class="h-12 w-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
+						<span class="material-icons text-amber-600 text-2xl">work_history</span>
+					</div>
+					<h3 class="text-xl font-bold text-slate-900 mb-3">Artisan Recognition of Prior Learning (ARPL)</h3>
+					<p class="text-slate-600 text-sm mb-6 leading-relaxed">
+						For candidates without a formal artisan program but with relevant years of work experience in the related trade.
+					</p>
+					<h4 class="text-sm font-bold text-slate-700 mb-3">You must have one of the following:</h4>
+					<ul class="space-y-2 text-sm text-slate-600">
+						<li class="flex items-start gap-2"><span class="material-icons text-alttebo-blue text-base mt-0.5">check_circle</span> N2 Certificate + 3 years relevant experience</li>
+						<li class="flex items-start gap-2"><span class="material-icons text-alttebo-blue text-base mt-0.5">check_circle</span> NQF Level 3 trade theory + 3 years experience</li>
+						<li class="flex items-start gap-2"><span class="material-icons text-alttebo-blue text-base mt-0.5">check_circle</span> Engineering NCV 4 + 18 months experience</li>
+						<li class="flex items-start gap-2"><span class="material-icons text-alttebo-blue text-base mt-0.5">check_circle</span> Technical Grade 12 (Maths, Science) + 3 years experience</li>
+						<li class="flex items-start gap-2"><span class="material-icons text-alttebo-blue text-base mt-0.5">check_circle</span> Grade 9 + 4 years relevant experience</li>
+						<li class="flex items-start gap-2"><span class="material-icons text-alttebo-blue text-base mt-0.5">check_circle</span> N6 Certificate or National Technical Diploma + 18 months experience</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- REQUIRED DOCUMENTS -->
+	<section class="py-24 bg-white">
+		<div class="max-w-4xl mx-auto px-6">
+			<h2 class="text-3xl font-display font-bold text-slate-900 mb-12 text-center">Documents Required to Apply</h2>
+			<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+				<div class="flex items-center gap-3 bg-workshop-grey p-4 rounded-lg">
+					<span class="material-icons text-alttebo-blue">description</span>
+					<span class="text-sm font-medium text-slate-700">Alttebo Trade Test Application Form</span>
+				</div>
+				<div class="flex items-center gap-3 bg-workshop-grey p-4 rounded-lg">
+					<span class="material-icons text-alttebo-blue">description</span>
+					<span class="text-sm font-medium text-slate-700">DHET Application Form</span>
+				</div>
+				<div class="flex items-center gap-3 bg-workshop-grey p-4 rounded-lg">
+					<span class="material-icons text-alttebo-blue">file_copy</span>
+					<span class="text-sm font-medium text-slate-700">2 x Certified copies of highest qualification</span>
+				</div>
+				<div class="flex items-center gap-3 bg-workshop-grey p-4 rounded-lg">
+					<span class="material-icons text-alttebo-blue">badge</span>
+					<span class="text-sm font-medium text-slate-700">2 x Certified ID copies (not older than 3 months)</span>
+				</div>
+				<div class="flex items-center gap-3 bg-workshop-grey p-4 rounded-lg">
+					<span class="material-icons text-alttebo-blue">menu_book</span>
+					<span class="text-sm font-medium text-slate-700">Original Logbook</span>
+				</div>
+				<div class="flex items-center gap-3 bg-workshop-grey p-4 rounded-lg">
+					<span class="material-icons text-alttebo-blue">handshake</span>
+					<span class="text-sm font-medium text-slate-700">Valid SETA Learnership Agreement</span>
+				</div>
+				<div class="flex items-center gap-3 bg-workshop-grey p-4 rounded-lg sm:col-span-2">
+					<span class="material-icons text-alttebo-blue">work</span>
+					<span class="text-sm font-medium text-slate-700">Valid Contract of Employment</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- AVAILABLE TRADE TESTS -->
+	<section class="py-24">
+		<div class="max-w-5xl mx-auto px-6">
+			<h2 class="text-3xl font-display font-bold text-slate-900 mb-12 text-center">Available Trade Tests</h2>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+					<div class="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+						<span class="material-icons text-alttebo-blue text-2xl">construction</span>
+					</div>
+					<h3 class="text-xl font-bold text-slate-900 mb-3">Panel Beating Trade Test</h3>
+					<p class="text-slate-600 text-sm leading-relaxed mb-6">
+						Practical assessment covering damage assessment, chassis straightening, dent pulling, panel replacement, and non-structural metal finishing.
+					</p>
+					<a href="/courses/panel-beating" class="text-alttebo-blue font-bold text-sm hover:underline inline-flex items-center gap-1">
+						View full course details <span class="material-icons text-base">arrow_forward</span>
+					</a>
+				</div>
+
+				<div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+					<div class="h-12 w-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
+						<span class="material-icons text-amber-600 text-2xl">palette</span>
+					</div>
+					<h3 class="text-xl font-bold text-slate-900 mb-3">Spray Painting Trade Test</h3>
+					<p class="text-slate-600 text-sm leading-relaxed mb-6">
+						Practical assessment covering surface preparation, colour matching, spray gun operation, primer/base coat/clear coat application, infrared curing, and polishing.
+					</p>
+					<a href="/courses/spray-painting" class="text-alttebo-blue font-bold text-sm hover:underline inline-flex items-center gap-1">
+						View full course details <span class="material-icons text-base">arrow_forward</span>
+					</a>
+				</div>
+			</div>
+
+			<!-- Download CTA -->
+			<div class="mt-16 bg-alttebo-blue rounded-xl p-10 text-center text-white">
+				<h3 class="font-display text-2xl font-bold mb-3">Get the Full Trade Test Information</h3>
+				<p class="text-blue-100 mb-6 max-w-lg mx-auto text-sm">Download our comprehensive document with all requirements, routes, and application details for Panel Beating and Spray Painting trade tests.</p>
+				<a href="/alttebo-trade-test-info.pdf" download class="inline-flex items-center gap-2 bg-safety-yellow text-slate-900 px-8 py-4 rounded-md font-bold hover:bg-safety-dark transition-colors">
+					<span class="material-icons">download</span> Download Info Document
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<Footer />
+</Layout>
